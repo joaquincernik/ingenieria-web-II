@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wibond</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <header>
+    <div class="bar">
+      <img
+        src="/images/arrow.png"
+        style="height: 30px; padding-left: 5%; color: rgba(77, 77, 77, 1)"
+        alt=""
+      />
+      <div style="display: flex; padding-right: 5%">
+        <img src="/images/logo-sin-texto.png" style="height: 15px" alt="" />
+        <p id="logo-text">WIBOND</p>
+      </div>
+    </div>
+  </header>
+  <body>
+    <h1 style="font-size: 1.7em; padding-top: 8%; padding-left: 6%">
+      Transferir dinero
+    </h1>
+    <div
+      class="container"
+      style="
+        display: flex;
+        width: 100vw;
+        align-items: center;
+        flex-direction: column;
+      "
+    >
+      <div class="progress-bar">
+        <img src="images/progress-active.png" alt="" />
+        <img src="images/finished-to-finished.png" alt="" srcset="" />
+        <img src="images/step-incomplete.png" alt="" srcset="" />
+        <img src="images/finished-to-finished.png" alt="" srcset="" />
+        <img src="images/step-incomplete.png" alt="" srcset="" />
+      </div>
+      <div class="card">
+        <h3>Dinero disponible</h3>
+        <h1>ARS $1.236,00</h1>
+      </div>
+
+      <div
+        style="
+          width: 90%;
+          margin-top: 7%;
+          border: 1px solid rgba(0, 0, 0, 0.2);
+          border-radius: 10px;
+        "
+      >
+        <div
+          style="
+            width: 100%;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            background-color: rgba(31, 31, 31, 1);
+          "
+        >
+          <h3
+            style="
+              font-family: Montserrat, sans-serif;
+              font-weight: 700;
+              color: white;
+              font-size: 0.9em;
+              padding: 5%;
+            "
+          >
+            Tipo de destino
+          </h3>
+        </div>
+        <div style="display: flex; flex-direction: column; width: 100%">
+          <div class="input-radio">
+            <label for="cuenta">Wibond</label>
+            <input type="radio" checked name="cuenta" id="" />
+          </div>
+          <div
+            style="
+              width: 90%;
+              height: 1px;
+              background-color: rgba(0, 0, 0, 0.2);
+              align-self: center;
+            "
+          ></div>
+          <div class="input-radio">
+            <label for="cuenta">Cuenta bancaria</label>
+            <input
+              type="radio"
+              name="destinatario"
+              value="mult-destinatario"
+              id=""
+            />
+          </div>
+        </div>
+      </div>
+
+    <div style="align-self:flex-start; margin-left: 5%; margin-top: 6%;">
+      <h3
+        style="
+          color: rgba(77, 77, 77, 1);
+          font-family: Montserrat, sans serif;
+          font-weight: 600;
+          font-size: 0.8em;
+        "
+      >
+        Quien recibe la transferencia?
+      </h3>
+    </div>
+      <div class="div-input" style="background-color: rgba(48, 63, 159, 0.2)">
+        <img src="images/Icon.png" class="input-icon" />
+        <input
+          placeholder="Usuario, DNI, CUIT o CUIL"
+          class="input-login"
+          style="color: rgba(77, 77, 77, 1)"
+          name="receptor"
+        />
+      </div>
+
+      <button class="big-button" style="margin-top: 15%; width: 80%">
+        Siguiente
+      </button>
+    </div>
+  </body>
+</html>
