@@ -61,81 +61,21 @@
         <h3 style="text-align: center; margin-bottom: 0;">Cuanto queres transferir?</h3>
       </div>
 
-      <div
-        style="
-          width: 90%;
-          margin-top: 7%;
-          border: 1px solid rgba(0, 0, 0, 0.2);
-          border-radius: 10px;
-        "
-      >
-        <div
-          style="
-            width: 100%;
-            border-top-left-radius: 10px;
-            border-top-right-radius: 10px;
-            background-color: rgba(31, 31, 31, 1);
-          "
-        >
-          <h3
-            style="
-              font-family: Montserrat, sans-serif;
-              font-weight: 700;
-              color: white;
-              font-size: 0.9em;
-              padding: 5%;
-            "
-          >
-            Tipo de destino
-          </h3>
-        </div>
-        <div style="display: flex; flex-direction: column; width: 100%">
-          <div class="input-radio">
-            <label for="cuenta">Wibond</label>
-            <input type="radio" checked name="cuenta" id="" />
-          </div>
-          <div
-            style="
-              width: 90%;
-              height: 1px;
-              background-color: rgba(0, 0, 0, 0.2);
-              align-self: center;
-            "
-          ></div>
-          <div class="input-radio">
-            <label for="cuenta">Cuenta bancaria</label>
-            <input
-              type="radio"
-              name="destinatario"
-              value="mult-destinatario"
-              id=""
-            />
-          </div>
-        </div>
+      <div class="div-input" style="background-color: rgba(80, 124, 221, 0.2); margin-top: 8%;">
+        <img src="images/atention.png" style="height: 24px; width: 24px;" class="input-icon" />
+        <h3 style="font-weight: 600; color: rgba(77, 77, 77, 1);">Impuestos</h3>
+        <h3 style="font-weight: 600; color: rgba(77, 77, 77, 1); text-align: end; padding-left: 35%;">ARS $20,00</h3>
+            
       </div>
 
-      <div style="align-self: flex-start; margin-left: 5%; margin-top: 6%">
-        <h3
-          style="
-            color: rgba(77, 77, 77, 1);
-            font-family: Montserrat, sans serif;
-            font-weight: 600;
-            font-size: 0.8em;
-          "
-        >
-          Quien recibe la transferencia?
-        </h3>
-      </div>
-      <div class="div-input" style="background-color: rgba(48, 63, 159, 0.2)">
-        <img src="images/Icon.png" class="input-icon" />
-        <input
-          placeholder="Usuario, DNI, CUIT o CUIL"
-          class="input-login"
-          style="color: rgba(77, 77, 77, 1)"
-          name="receptor"
-        />
-      </div>
 
+      <div class="div-input" style="background-color: rgba(196, 196, 196, 0.2); margin-top: 8%;">
+        <input class="input-login" type="text" placeholder="Anadir mensaje" name="mensaje">
+        <svg width="24" height="24" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1.00398 18.5792C0.723461 18.5787 0.456046 18.4604 0.266978 18.2532C0.0744233 18.0476 -0.0212578 17.7697 0.00397781 17.4892L0.248978 14.7951L11.567 3.48115L15.104 7.01715L3.78898 18.3302L1.09498 18.5752C1.06398 18.5782 1.03298 18.5792 1.00398 18.5792ZM15.81 6.31015L12.274 2.77415L14.395 0.65315C14.5825 0.465373 14.8371 0.359863 15.1025 0.359863C15.3679 0.359863 15.6224 0.465373 15.81 0.65315L17.931 2.77415C18.1188 2.96172 18.2243 3.21624 18.2243 3.48165C18.2243 3.74706 18.1188 4.00158 17.931 4.18915L15.811 6.30915L15.81 6.31015Z" fill="#323232"/>
+            </svg>
+        
+      </div>
       <button class="big-button" style="margin-top: 15%; width: 80%">
         Siguiente
       </button>
