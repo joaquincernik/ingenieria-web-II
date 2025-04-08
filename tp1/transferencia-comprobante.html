@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wibond</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <header>
+    <div class="bar" style="padding-top: 4%;">
+      <img
+        src="/images/arrow.png"
+        style="height: 30px; padding-left: 5%; color: rgba(77, 77, 77, 1)"
+        alt=""
+      />
+      <div style="display: flex; padding-right: 5%">
+        <img src="/images/logo-sin-texto.png" style="height: 15px" alt="" />
+        <p id="logo-text">WIBOND</p>
+      </div>
+    </div>
+  </header>
+  <body>
+    <h1 style="font-size: 1.7em; padding-top: 8%; padding-left: 6%">
+      Transferir dinero
+    </h1>
+    <div
+      class="container"
+      style="
+        display: flex;
+        width: 100vw;
+        align-items: center;
+        flex-direction: column;
+      "
+    >
+      <div
+        style="
+          width: 90%;
+          margin-top: 7%;
+          border: 1px solid rgba(0, 0, 0, 0.2);
+          border-radius: 10px;
+          box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.25);
+        "
+        class="card-comprobante"
+      >
+        <div
+          style="
+            width: 100%;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            background-color: rgba(31, 31, 31, 1);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+          "
+        >
+          <h3
+            style="
+              font-family: Montserrat, sans-serif;
+              font-weight: 700;
+              color: white;
+              font-size: 0.9em;
+              padding: 5%;
+            "
+          >
+            Comprobante
+          </h3>
+          <img
+            src="images/downlad.png"
+            style="padding-right: 5%"
+            width="20px"
+            height="20px"
+            alt=""
+            srcset=""
+          />
+        </div>
+
+        <div class="mini-card">
+          <p class="main-p">ID del movimiento</p>
+          <p class="sec-p">2015142222</p>
+        </div>
+
+        <div class="mini-card">
+          <p class="main-p">Fecha</p>
+          <p class="sec-p">9/12/2018</p>
+        </div>
+
+        <p class="main-p" style="padding-left: 7%">Emisor de transferencia</p>
+        <div class="card-detalle" style="margin-bottom: 3%">
+          <img
+            src="images/perfil-2.png"
+            style="height: 30px; width: 30px; margin: 5%"
+            alt=""
+            srcset=""
+          />
+          <div>
+            <p>Gerardo B</p>
+            <p>CUIT 2525225252</p>
+          </div>
+        </div>
+        <p class="main-p" style="padding-left: 7%">Destino de transferencia</p>
+        <div class="card-detalle">
+          <img
+            src="images/perfil.png"
+            style="height: 30px; width: 30px; margin: 5%"
+            alt=""
+            srcset=""
+          />
+          <div>
+            <p>Ailen Saraceni</p>
+            <p>CUIT 2525225252</p>
+          </div>
+        </div>
+
+        <div class="mini-card">
+          <p class="main-p">Importe</p>
+          <p class="sec-p">ARS $1.500,00</p>
+        </div>
+
+        <div
+          style="
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 5%;
+          "
+        >
+          <img
+            src="images/share.png"
+            style="margin-right: 3%"
+            alt=""
+            srcset=""
+          />
+          <a
+            style="
+              font-family: Montserrat, sans-serif;
+              font-weight: 600;
+              font-size: 0.9em;
+              text-decoration: underline;
+              color: rgba(35, 63, 120, 1);
+            "
+            >Compartir comprobante</a
+          >
+        </div>
+      </div>
+      <p
+        style="
+          color: rgba(77, 77, 77, 1);
+          font-weight: 600;
+          font-family: Montserrat, sans-serif;
+          padding: 5%;
+        "
+      >
+        Gracias por usar Wibond!
+      </p>
+
+      <button class="big-button" style="width: 80%; font-size: 1em;" disabled>
+        Nueva transferencia
+      </button>
+      <button
+        class="big-button"
+        style="
+          margin: 5%;
+          width: 80%;
+          background-color: white;
+          border: 1px solid rgba(113, 101, 227, 1);
+          color: rgba(113, 101, 227, 1);
+          font-size: 1em;
+        "
+      >
+        Ir a actividad
+      </button>
+    </div>
+  </body>
+</html>

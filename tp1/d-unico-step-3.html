@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wibond</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <header>
+    <div class="bar">
+      <img
+        src="/images/arrow.png"
+        style="height: 30px; padding-left: 5%; color: rgba(77, 77, 77, 1)"
+        alt=""
+      />
+      <div style="display: flex; padding-right: 5%">
+        <img src="/images/logo-sin-texto.png" style="height: 15px" alt="" />
+        <p id="logo-text">WIBOND</p>
+      </div>
+    </div>
+  </header>
+  <body>
+    <h1 style="font-size: 1.7em; padding-top: 8%; padding-left: 6%">
+      Verificacion
+    </h1>
+    <div
+      class="container"
+      style="
+        display: flex;
+        width: 100vw;
+        align-items: center;
+        flex-direction: column;
+      "
+    >
+      <div class="progress-bar">
+        <img src="images/progress-done.png" alt="" />
+        <img
+          src="images/finished-to-finished.png"
+          style="background-color: rgba(2, 188, 138, 1)"
+          alt=""
+          srcset=""
+        />
+        <img src="images/progress-active.png" alt="" srcset="" />
+        <img src="images/finished-to-finished.png" alt="" srcset="" />
+        <img src="images/step-incomplete.png" alt="" srcset="" />
+      </div>
+
+      <p
+        style="
+          font-family: Montserrat, sans-serif;
+          color: rgba(77, 77, 77, 1);
+          font-weight: 600;
+          margin-top: 8%;
+          margin-left: 10%;
+        "
+      >
+        Revisa que la informacion sea correcta para proceder con la
+        transferencia
+      </p>
+
+      <div
+        style="
+          width: 90%;
+          margin-top: 7%;
+          border: 1px solid rgba(0, 0, 0, 0.2);
+          border-radius: 10px;
+        "
+      >
+        <div
+          style="
+            width: 100%;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            background-color: rgba(31, 31, 31, 1);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            
+          "
+        >
+          <h3
+            style="
+              font-family: Montserrat, sans-serif;
+              font-weight: 700;
+              color: white;
+              font-size: 0.9em;
+              padding: 5%;
+            "
+          >
+            Resumen
+          </h3>
+          <img src="images/edit.png" style="padding-right: 5%;" width="24px" height="24px" alt="" srcset="">
+        </div>
+        <h3
+          style="
+            font-family: Montserrat, sans-serif;
+            font-weight: 700;
+            color: rgba(77, 77, 77, 1);
+            font-size: 0.9em;
+            padding: 5%;
+          "
+        >
+          Destino de transferencia
+        </h3>
+        <div style="display: flex; width: 100%; align-items: center">
+          <img
+            src="images/perfil.png"
+            style="height: 30px; width: 30px; margin: 5%"
+            alt=""
+            srcset=""
+          />
+          <div>
+            <p>Ailen Saraceni</p>
+            <p>CUIT 2525225252</p>
+          </div>
+          
+        </div>
+        <div style="display: flex; justify-content: space-between; margin: 8%;">
+            <p>Importe</p>
+            <p>ARS $1.500,00</p>
+          </div>
+      </div>
+
+      <button class="big-button" style="margin-top: 45%; width: 80%">
+        Siguiente
+      </button>
+    </div>
+  </body>
+</html>
