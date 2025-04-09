@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wibond</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <header>
+    <div class="bar">
+      <img
+        src="/images/arrow.png"
+        style="height: 30px; padding-left: 5%; color: rgba(77, 77, 77, 1)"
+        alt=""
+      />
+      <div style="display: flex; padding-right: 5%">
+        <img src="/images/logo-sin-texto.png" style="height: 15px" alt="" />
+        <p id="logo-text">WIBOND</p>
+      </div>
+    </div>
+  </header>
+  <body>
+    <h1 style="font-size: 1.7em; padding-top: 8%; padding-left: 6%">
+      Transferir dinero
+    </h1>
+    <div
+      class="container"
+      style="
+        display: flex;
+        width: 100vw;
+        align-items: center;
+        flex-direction: column;
+      "
+    >
+      <div class="progress-bar">
+        <img src="images/progress-active.png" alt="" />
+        <img src="images/finished-to-finished.png" alt="" srcset="" />
+        <img src="images/step-incomplete.png" alt="" srcset="" />
+        <img src="images/finished-to-finished.png" alt="" srcset="" />
+        <img src="images/step-incomplete.png" alt="" srcset="" />
+      </div>
+
+      <p
+        style="
+          font-family: Montserrat, sans-serif;
+          font-weight: 600;
+          margin: 5%;
+          margin-top: 10%;
+          font-size: 0.9em;
+        "
+      >
+        Completa los datos en la planilla de transferencia y sube el archivo
+        para continuar.
+      </p>
+
+      <div style="display: flex; width: 70%; flex-direction: column">
+        <button
+          class="outline-button"
+          style="
+            background-color: rgba(80, 124, 221, 1);
+            color: white;
+            border: 0;
+            align-items: center;
+          "
+        >
+          <img
+            src="images/downlad.png"
+            style="padding-right: 3%"
+            alt=""
+            srcset=""
+          />
+          Subir archivo
+        </button>
+
+        <button
+          class="outline-button"
+          style="
+            background-color: white;
+            border: 1px solid rgba(80, 124, 221, 1);
+            color: rgba(80, 124, 221, 1);
+            align-items: center;
+          "
+        >
+          <img
+            src="images/Download.png"
+            style="padding-right: 3%"
+            width="21px"
+            height="21px"
+            alt=""
+            srcset=""
+          />
+          Descargar plantilla
+        </button>
+      </div>
+
+      <div
+        style="
+          display: flex;
+          flex-direction: column;
+          width: 90%;
+          border: 1px solid rgba(0, 0, 0, 0.1);
+          border-radius: 10px;
+          margin-top: 10%;
+        "
+      >
+        <select>
+          <option value="Primera">
+            Primera vez usando transferencias multiples?
+          </option>
+        </select>
+        <div class="ol-personalizado">
+          <p>1</p>
+          <h4>Descargar la planilla en tu dispositivo</h4>
+        </div>
+
+        <div class="ol-personalizado">
+          <p>2</p>
+          <h4>
+            Completa con los datos de tus personas destinatarias. ¡No olvides
+            indicar los montos para cada uno!
+          </h4>
+        </div>
+
+        <div class="ol-personalizado">
+          <p>3</p>
+          <h4>Guarda el documento con la información nueva</h4>
+        </div>
+
+        <div class="ol-personalizado">
+          <p>4</p>
+          <h4>
+            Carga la planilla haciendo click en el botón “Subir archivo” ¡Y
+            listo!
+          </h4>
+        </div>
+      </div>
+      <button class="big-button" style="margin-top: 15%; width: 80%">
+        Siguiente
+      </button>
+    </div>
+  </body>
+</html>
