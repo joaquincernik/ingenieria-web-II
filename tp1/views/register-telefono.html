@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wibond</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="bar">
+      <img
+        src="/images/arrow.png"
+        style="height: 30px; padding-left: 8%; color: rgba(77, 77, 77, 1)"
+        alt=""
+      />
+      <div style="display: flex; padding-right: 5%">
+        <img src="/images/logo-sin-texto.png" style="height: 15px" alt="" />
+        <p id="logo-text">WIBOND</p>
+      </div>
+    </div>
+    <h1
+      style="
+        font-family: Montserrat, sans-serif;
+        font-weight: 600;
+        padding: 5%;
+        font-size: 1.8em;
+      "
+    >
+      Ingresar tu telefono
+    </h1>
+    <form id="formLogin">
+      <div style="width: 100%" class="div-form">
+        <div class="div-input" style="background-color: rgba(48, 63, 159, 0.2)">
+          <img src="/images/whatsapp.png" class="input-icon" />
+          <input
+            placeholder="Telefono"
+            class="input-login"
+            style="color: rgba(77, 77, 77, 1)"
+            name="email"
+            id="input-telefono"
+            type="number"
+          />
+        </div>
+      </div>
+    </form>
+
+    <div
+      style="
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin-top: 3.3em;
+      "
+    >
+      <button
+        disabled
+        class="big-button"
+        id="button-register-telefono"
+        type="submit"
+        onclick="redirect()"
+      >
+        Verificar telefono
+      </button>
+    </div>
+    <script defer>
+        const telefono = document.getElementById('input-telefono')
+        telefono.addEventListener('input',() =>{
+            if(telefono.value > 0){
+                document.getElementById('button-register-telefono').removeAttribute('disabled')
+            }
+            else{
+                document.getElementById('button-register-telefono').setAttribute('disabled', '')
+            }
+        })
+
+        function redirect(){
+            window.location.href = 'http://127.0.0.1:5500/views/register-telefono-verificar.html'
+
+        }
+    </script>
+  </body>
+</html>

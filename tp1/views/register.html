@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wibond</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="/js/scriptRegister.js" defer></script>
+  </head>
+  <body>
+    <div class="bar">
+        <img
+          src="/images/arrow.png"
+          style="height: 30px; padding-left: 8%; color: rgba(77, 77, 77, 1)"
+          alt=""
+        />
+        <div style="display: flex; padding-right: 5%">
+          <img src="/images/logo-sin-texto.png" style="height: 15px" alt="" />
+          <p id="logo-text">WIBOND</p>
+        </div>
+      </div>
+      <h1 style="font-family: Montserrat,sans-serif; font-weight: 600; padding: 5%; font-size: 1.8em;">Registrar usuario</h1>
+
+    <form id="formLogin" >
+      <div style="width: 100%" class="div-form">
+      <div class="div-input"  style="background-color: rgba(48, 63, 159, 0.2)">
+        <img src="/images/Icon.png" class="input-icon" />
+        <input
+          placeholder="Email"
+          class="input-login"
+          style="color: rgba(77, 77, 77, 1)"
+          name="email"
+          id="email"
+        />
+      </div>
+
+      <div class="div-input">
+        <img src="/images/mail.png" class="input-icon" />
+        <input
+          minlength="8"
+          placeholder="Contrasena"
+          class="input-login"
+          style="color: rgba(77, 77, 77, 1)"
+          name="password"
+          id="password"
+          type="password"
+        />
+      </div>
+    </div>
+   
+      <div
+        style="
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          width: 100%;
+          margin-top: 3.3em;
+        "
+      >
+        <button disabled class="big-button" id="button-register" type="submit">Iniciar sesion</button>
+    </form>
+        </div>
+  </body>
+</html>

@@ -335,3 +335,30 @@ margin-bottom: 3%;
     border :1px solid rgba(80, 124, 221, 1);
     color : rgba(80, 124, 221, 1);
 }
+
+.upload-input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(80, 124, 221, 1);
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    text-align: center;
+
+    padding: 5%;
+    margin-bottom: 5%;
+    width: 90%;
+
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 0.8em;
+}
+
+.upload-input input{
+    display: block;
+    clip: rect(0px 0px 0px 0px);
+    position: absolute;
+    left: 0;
+    top: 0;
+}

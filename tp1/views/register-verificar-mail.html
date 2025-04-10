@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wibond</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="/js/scriptRegisterVerifiacion.js" defer></script>
+  </head>
+  <body>
+    <div class="bar">
+        <img
+          src="/images/arrow.png"
+          style="height: 30px; padding-left: 8%; color: rgba(77, 77, 77, 1)"
+          alt=""
+        />
+        <div style="display: flex; padding-right: 5%">
+          <img src="/images/logo-sin-texto.png" style="height: 15px" alt="" />
+          <p id="logo-text">WIBOND</p>
+        </div>
+      </div>
+      <h1 style="font-family: Montserrat,sans-serif; font-weight: 600; padding: 5%; font-size: 1.8em;">Ingresar el codigo enviado a tu mail</h1>
+
+      <div style="display: flex; flex-direction: column; align-items: center; margin-top: 20%;">
+      <div
+        style="
+          width: 75%;
+          margin-top: 8%;
+          display: flex;
+          justify-content: center;
+          align-self: center;
+        "
+        class="verificacion-div"
+      >
+        <input  type="text" maxlength="1" pattern="\d" id="number-1" name="number-1"/>
+        <input type="text" maxlength="1" pattern="\d" id="number-2" name="number-2"/>
+        <input type="text" maxlength="1" pattern="\d" id="number-3" name="number-3" />
+        <input type="text" maxlength="1" pattern="\d" id="number-4" name="number-4" />
+      </div>
+    </div>
+      <div
+        style="
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          width: 100%;
+          margin-top: 30%;
+        "
+      >
+        <button disabled class="big-button" id="button-number-verificar" style="margin-top: 45%;" type="submit">Verificar email</button>
+    </form>
+        </div>
+  </body>
+</html>

@@ -68,24 +68,8 @@
         <div>
           <label
             id="button-upload-csv"
-            style="
-              display: flex;
-              justify-content: center;
-              align-items: center;
-              background-color: rgba(80, 124, 221, 1);
-              color: white;
-              border-radius: 5px;
-              cursor: pointer;
-              text-align: center;
+            class="upload-input"
 
-              padding: 5%;
-              margin-bottom: 5%;
-              width: 90%;
-
-              font-family: 'Montserrat', sans-serif;
-              font-weight: 500;
-              font-size: 0.8em;
-            "
           >
           <img
             src="/images/downlad.png"
@@ -97,13 +81,6 @@
             <input
               type="file"
               accept=".csv"
-              style="
-                display: block;
-                clip: rect(0px 0px 0px 0px);
-                position: absolute;
-                left: 0;
-                top: 0;
-              "
               id="upload-csv"
               onchange="handleFile(event)"
             />
