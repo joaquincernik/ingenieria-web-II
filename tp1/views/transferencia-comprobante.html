@@ -13,6 +13,7 @@
       href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <script src="/js/scriptComprobante.js"></script>
   </head>
   <header>
     <div class="bar" style="padding-top: 4%;">
@@ -73,7 +74,7 @@
             Comprobante
           </h3>
           <img
-            src="images/downlad.png"
+            src="/images/downlad.png"
             style="padding-right: 5%"
             width="20px"
             height="20px"
@@ -95,7 +96,7 @@
         <p class="main-p" style="padding-left: 7%">Emisor de transferencia</p>
         <div class="card-detalle" style="margin-bottom: 3%">
           <img
-            src="images/perfil-2.png"
+            src="/images/perfil-2.png"
             style="height: 30px; width: 30px; margin: 5%"
             alt=""
             srcset=""
@@ -108,7 +109,7 @@
         <p class="main-p" style="padding-left: 7%">Destino de transferencia</p>
         <div class="card-detalle">
           <img
-            src="images/perfil.png"
+            src="/images/perfil.png"
             style="height: 30px; width: 30px; margin: 5%"
             alt=""
             srcset=""
@@ -133,7 +134,7 @@
           "
         >
           <img
-            src="images/share.png"
+            src="/images/share.png"
             style="margin-right: 3%"
             alt=""
             srcset=""
@@ -161,7 +162,7 @@
         Gracias por usar Wibond!
       </p>
 
-      <button class="big-button" style="width: 80%; font-size: 1em;" disabled>
+      <button class="big-button" onclick="handlerButtonRedirect()" style="width: 80%; font-size: 1em;">
         Nueva transferencia
       </button>
       <button
