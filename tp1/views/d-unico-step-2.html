@@ -13,6 +13,8 @@
       href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <script src="/js/scriptTransferencia2.js" defer></script>
+
   </head>
   <header>
     <div class="bar">
@@ -41,42 +43,45 @@
       "
     >
       <div class="progress-bar">
-        <img src="images/progress-done.png" alt="" />
+        <img src="/images/progress-done.png" alt="" />
         <img
-          src="images/finished-to-finished.png"
+          src="/images/finished-to-finished.png"
           style="background-color: rgba(2, 188, 138, 1)"
           alt=""
           srcset=""
         />
-        <img src="images/progress-active.png" alt="" srcset="" />
-        <img src="images/finished-to-finished.png" alt="" srcset="" />
-        <img src="images/step-incomplete.png" alt="" srcset="" />
+        <img src="/images/progress-active.png" alt="" srcset="" />
+        <img src="/images/finished-to-finished.png" alt="" srcset="" />
+        <img src="/images/step-incomplete.png" alt="" srcset="" />
       </div>
       <div class="card-transferencia">
         <div style="display: flex; justify-content: space-between">
           <h3>Dinero disponible</h3>
-          <h3>ARS $1.236,00</h3>
+          <h3 >ARS $<span id="monto-disponible">1236</span></h3>
         </div>
-        <h1>$1.500,00</h1>
+        <div class="div-input-card" style="display: flex;justify-content: center;">
+          <h1>$</h1>
+        <input type="text" name="monto"  placeholder="1.500,00" id="input-monto">
+      </div>
         <h3 style="text-align: center; margin-bottom: 0;">Cuanto queres transferir?</h3>
       </div>
 
       <div class="div-input" style="background-color: rgba(80, 124, 221, 0.2); margin-top: 8%;">
-        <img src="images/atention.png" style="height: 24px; width: 24px;" class="input-icon" />
+        <img src="/images/atention.png" style="height: 24px; width: 24px;" class="input-icon" />
         <h3 style="font-weight: 600; color: rgba(77, 77, 77, 1);">Impuestos</h3>
-        <h3 style="font-weight: 600; color: rgba(77, 77, 77, 1); text-align: end; padding-left: 35%;">ARS $20,00</h3>
+        <h3 style="font-weight: 600; color: rgba(77, 77, 77, 1); text-align: end; padding-left: 35%;">ARS $<span id="impuestos"></span></h3>
             
       </div>
 
 
       <div class="div-input" style="background-color: rgba(196, 196, 196, 0.2); margin-top: 8%;">
-        <input class="input-login" type="text" placeholder="Anadir mensaje" name="mensaje">
+        <input class="input-login" type="text" placeholder="Anadir mensaje" id="input-mensaje" name="mensaje">
         <svg width="24" height="24" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M1.00398 18.5792C0.723461 18.5787 0.456046 18.4604 0.266978 18.2532C0.0744233 18.0476 -0.0212578 17.7697 0.00397781 17.4892L0.248978 14.7951L11.567 3.48115L15.104 7.01715L3.78898 18.3302L1.09498 18.5752C1.06398 18.5782 1.03298 18.5792 1.00398 18.5792ZM15.81 6.31015L12.274 2.77415L14.395 0.65315C14.5825 0.465373 14.8371 0.359863 15.1025 0.359863C15.3679 0.359863 15.6224 0.465373 15.81 0.65315L17.931 2.77415C18.1188 2.96172 18.2243 3.21624 18.2243 3.48165C18.2243 3.74706 18.1188 4.00158 17.931 4.18915L15.811 6.30915L15.81 6.31015Z" fill="#323232"/>
             </svg>
         
       </div>
-      <button class="big-button" style="margin-top: 15%; width: 80%">
+      <button class="big-button" onclick="transferirButton()" style="margin-top: 15%; width: 80%">
         Siguiente
       </button>
     </div>

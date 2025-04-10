@@ -13,6 +13,7 @@
       href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <script src="/js/scriptVerificacion.js"></script>
   </head>
   <header>
     <div class="bar">
@@ -41,24 +42,29 @@
       "
     >
       <div class="progress-bar">
-        <img src="images/progress-done.png" alt="" />
+        <img src="/images/progress-done.png" alt="" />
         <img
-          src="images/finished-to-finished.png"
+          src="/images/finished-to-finished.png"
           style="background-color: rgba(2, 188, 138, 1)"
           alt=""
           srcset=""
         />
-        <img src="images/progress-done.png" alt="" srcset="" />
+        <img src="/images/progress-done.png" alt="" srcset="" />
         <img
-          src="images/finished-to-finished.png"
+          src="/images/finished-to-finished.png"
           style="background-color: rgba(2, 188, 138, 1)"
           alt=""
           srcset=""
         />
-        <img src="images/progress-active.png" alt="" srcset="" />
+        <img src="/images/progress-active.png" alt="" srcset="" />
       </div>
       <p
-        style="padding-left: 40%; padding-top: 2%; color: rgba(80, 124, 221, 1); font-size: 0.7em;"
+        style="
+          padding-left: 40%;
+          padding-top: 2%;
+          color: rgba(80, 124, 221, 1);
+          font-size: 0.7em;
+        "
       >
         Ultimo paso!
       </p>
@@ -78,7 +84,6 @@
             style="
               font-family: Montserrat, sans-serif;
               color: rgba(80, 124, 221, 1);
-              
             "
             >autorices</span
           >
@@ -97,9 +102,13 @@
       </div>
 
       <div style="width: 75%; margin-top: 8%">
-        <button class="outline-button">
+        <button
+          class="outline-button"
+          onclick="handlerVerificacion(this)"
+          id="email"
+        >
           <img
-            src="images/mail.png"
+            src="/images/mail.png"
             style="padding-right: 3%"
             alt=""
             srcset=""
@@ -108,22 +117,24 @@
         </button>
         <button
           class="outline-button"
-          style="
-            border: 1px solid rgba(80, 124, 221, 1);
-            color: rgba(80, 124, 221, 1);
-          "
+          id="whatsapp"
+          onclick="handlerVerificacion(this)"
         >
           <img
-            src="images/whatsapp-blue.png"
+            src="/images/whatsapp.png"
             style="padding-right: 3%"
             alt=""
             srcset=""
           />
           Whatsapp
         </button>
-        <button class="outline-button">
+        <button
+          class="outline-button"
+          id="sms"
+          onclick="handlerVerificacion(this)"
+        >
           <img
-            src="images/whatsapp.png"
+            src="/images/whatsapp.png"
             style="padding-right: 3%"
             alt=""
             srcset=""
@@ -131,7 +142,7 @@
           SMS
         </button>
       </div>
-      <button class="big-button" style="margin-top: 60%; width: 80%">
+      <button class="big-button" disabled id="button-verificar" style="margin-top: 60%; width: 80%">
         Siguiente
       </button>
     </div>

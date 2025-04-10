@@ -13,6 +13,7 @@
       href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <script src="/js/scriptVerificacion.js" defer></script>
   </head>
   <header>
     <div class="bar">
@@ -41,21 +42,21 @@
       "
     >
       <div class="progress-bar">
-        <img src="images/progress-done.png" alt="" />
+        <img src="/images/progress-done.png" alt="" />
         <img
-          src="images/finished-to-finished.png"
+          src="/images/finished-to-finished.png"
           style="background-color: rgba(2, 188, 138, 1)"
           alt=""
           srcset=""
         />
-        <img src="images/progress-done.png" alt="" srcset="" />
+        <img src="/images/progress-done.png" alt="" srcset="" />
         <img
-          src="images/finished-to-finished.png"
+          src="/images/finished-to-finished.png"
           style="background-color: rgba(2, 188, 138, 1)"
           alt=""
           srcset=""
         />
-        <img src="images/progress-active.png" alt="" srcset="" />
+        <img src="/images/progress-active.png" alt="" srcset="" />
       </div>
 
       <div style="margin-top: 8%; width: 84%">
@@ -80,11 +81,12 @@
           display: flex;
           justify-content: center;
         "
+        class="verificacion-div"
       >
-        <input type="number" name="number-1" />
-        <input type="number" name="number-2" />
-        <input type="number" name="number-3" />
-        <input type="number" name="number-4" />
+        <input  type="text" maxlength="1" pattern="\d" id="number-1" name="number-1"/>
+        <input type="text" maxlength="1" pattern="\d" id="number-2" name="number-2"/>
+        <input type="text" maxlength="1" pattern="\d" id="number-3" name="number-3" />
+        <input type="text" maxlength="1" pattern="\d" id="number-4" name="number-4" />
       </div>
 
       <div style="align-self: self-start; margin: 8%">
@@ -98,7 +100,8 @@
           Reenviar codigo en: 00:20
         </p>
       </div>
-      <button class="big-button" style="margin-top: 50%; width: 80%" disabled>
+      <button class="big-button" 
+      id="button-number-verificar" style="margin-top: 50%; width: 80%" disabled>
         Confirmar transferencia
       </button>
       <button

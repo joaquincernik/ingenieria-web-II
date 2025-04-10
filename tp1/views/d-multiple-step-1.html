@@ -15,6 +15,7 @@
       href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <script src="/js/scriptTransferenciaMultiple.js" defer></script>
   </head>
   <header>
     <div class="bar">
@@ -64,7 +65,51 @@
       </p>
 
       <div style="display: flex; width: 70%; flex-direction: column">
-        <button
+        <div>
+          <label
+            id="button-upload-csv"
+            style="
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              background-color: rgba(80, 124, 221, 1);
+              color: white;
+              border-radius: 5px;
+              cursor: pointer;
+              text-align: center;
+
+              padding: 5%;
+              margin-bottom: 5%;
+              width: 90%;
+
+              font-family: 'Montserrat', sans-serif;
+              font-weight: 500;
+              font-size: 0.8em;
+            "
+          >
+          <img
+            src="/images/downlad.png"
+            style="padding-right: 3%"
+            alt=""
+            srcset=""
+          />
+            Subir archivo
+            <input
+              type="file"
+              accept=".csv"
+              style="
+                display: block;
+                clip: rect(0px 0px 0px 0px);
+                position: absolute;
+                left: 0;
+                top: 0;
+              "
+              id="upload-csv"
+              onchange="handleFile(event)"
+            />
+          </label>
+        </div>
+        <!-- <button
           class="outline-button"
           style="
             background-color: rgba(80, 124, 221, 1);
@@ -73,14 +118,15 @@
             align-items: center;
           "
         >
+        <input type="file" accept=".csv">
           <img
-            src="images/downlad.png"
+            src="/images/downlad.png"
             style="padding-right: 3%"
             alt=""
             srcset=""
           />
           Subir archivo
-        </button>
+        </button> -->
 
         <button
           class="outline-button"
@@ -92,7 +138,7 @@
           "
         >
           <img
-            src="images/Download.png"
+            src="/images/Download.png"
             style="padding-right: 3%"
             width="21px"
             height="21px"
@@ -113,7 +159,7 @@
           margin-top: 10%;
         "
       >
-        <select>
+        <select id="'s">
           <option value="Primera">
             Primera vez usando transferencias multiples?
           </option>
@@ -144,7 +190,7 @@
           </h4>
         </div>
       </div>
-      <button class="big-button" style="margin-top: 15%; width: 80%">
+      <button class="big-button" id="button-multiple" disabled style="margin-top: 15%; width: 80%">
         Siguiente
       </button>
     </div>
